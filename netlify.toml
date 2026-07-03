@@ -1,0 +1,10 @@
+[build]
+  command = "bun run build"
+  publish = "dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# The TanStack Start build (Nitro's Netlify preset) auto-generates the
+# server function and required redirects under .netlify/. No manual redirects
+# are needed here.
